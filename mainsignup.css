@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0);
+    padding-right: 15px;
+    padding-left: 15px;
+    position:absolute;
+    top:0;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.nav-link {
+    margin-right: 1em !important;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    color: #FF6600;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #363535;
+  }
+
+.dropdown-menu {
+    background-color: #000;
+}
+
+.dropdown-item{
+    color: #fff;
+}
+
+.header {
+    background-image: url('img/highway.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 120vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container {
+    position: absolute;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 150px;
+    background: -webkit-linear-gradient(135deg, #FF6600, #660000);
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #FF6600;
+}
+
+form .gender-details .gender-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form .gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details .category label {
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+    border-color: #d9d9d9;
+    background: #FF6600;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form .button {
+    height: 45px;
+    margin: 30px 0 20px 0;
+}
+
+form .button input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: -webkit-linear-gradient(135deg, #FF6600, #660000);
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+}
+
+form .button input:hover {
+    box-shadow: 0px 1px 18px #FF6600;
+    transition: .5s;
+}
+
+.agree {
+    cursor: pointer;
+    margin: 20px 5px 20px 5px;
+}
+
+.agree label {
+    margin-left: 2px;
+    color: #000;
+    font-size: 14px;
+}
+
+.agree input {
+    width: 12px;
+    padding: 0 5px;
+    height: 12px;
+}
+
+.agree a {
+    color: #FF6600;
+    text-decoration: none;
+}
+
+.agree a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    bottom: 0;
+    background-color: #000;
+    height: 50vh;
+}
+    
+.socialE li {
+    float: left;
+    list-style: none;
+    margin: 3%;
+}
+    
+#logo {
+    max-width: 120px;
+    margin-top: 25%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+    
+.colContact {
+    margin-top: 50px;
+}
+
+
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 30%;
+        transform: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 80%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .gender-details .category {
+        width: 100%;
+    }
+
+    .container form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+@media only screen and (max-width: 1036px) {    
+    #logo {
+        max-width: 80px;            
+    }    
+}
+    
+@media only screen and (max-width: 978px) {    
+    #footer {
+        height: 60vh;
+    }
+    .navbar{
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+}
+    
+@media only screen and (max-width: 768px) {  
+    #footer {
+        height: 80vh;
+    }
+}
+    
+@media only screen and (max-width: 578px) {
+    #footer {
+        height: 110vh;
+    }
+
+    #logo {
+        max-width: 60px;
+        margin: 0;
+        position: absolute;
+        top: 1%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .socialE li {
+        float: left;
+        list-style: none;
+        position: relative;
+        left: 18%;
+        top: 6vh;
+    } 
+    
+    .logbox {
+        width: 300px;
+    }
+    .colAd{
+        margin-left: 10%;
+        width: 400px;
+     
+      }
+      .colContact{
+        margin-left: 10%;
+        width: fit-content;
+      }
+}
+
+@media only screen and (max-width: 575.98px){
+    .header{
+        height: 130vh;
+    }
+} 
+    
+@media only screen and (max-width: 300px) {    
+    #footer {
+        height: 120vh;
+    }
+
+    .colContact{
+        margin-top: 10px;
+    }
+}
+
+#UA{
+   color: #FF6600;
+   cursor: pointer; 
+}
+
+#UADes{
+    font-size: smaller;
+    display: none;
+}
