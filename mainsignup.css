@@ -53,7 +53,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 120vh;
+    height: 140vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     align-items: center;
@@ -242,6 +242,10 @@ form .button input:hover {
         top: 30%;
         transform: none;
         text-align: center;
+    }
+    
+    .header {
+        height: 160vh;
     }
 }
 
